@@ -4,6 +4,7 @@
   "description": "Vue component for SimpleBar",
   "files": [
     "dist",
+    "scripts",
     "README.md"
   ],
   "author": "Piers Olenski",
@@ -23,6 +24,7 @@
     "jest": "jest -c jest-unit.config.js -u",
     "version": "yarn build",
     "precommit": "lint-staged",
+    "preinstall": "node scripts/preinstall.js",
     "test:2": "npm run use-vue:2 && npm run jest",
     "test:2.7": "npm run use-vue:2.7 && npm run jest",
     "test:3": "npm run use-vue:3 && npm run jest",
