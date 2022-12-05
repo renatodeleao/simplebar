@@ -19,7 +19,7 @@
   "homepage": "https://grsmto.github.io/simplebar/",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c && cp simplebar-vue.d.ts dist/simplebar-vue.d.ts",
+    "build": "npm run use-vue:3 && rollup -c && cp simplebar-vue.d.ts dist/simplebar-vue.d.ts",
     "jest": "jest -c jest-unit.config.js -u",
     "version": "yarn build",
     "precommit": "lint-staged",

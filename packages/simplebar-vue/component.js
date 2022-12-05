@@ -201,6 +201,7 @@ export default {
    * in other versions it's a context object that we do not use.
    */
   render(createElement) {
+    console.log('this is a simplebar-vue test', { isVue3 })
     return renderFn({
       h: typeof createElement === 'function' ? createElement : h,
       // @ts-ignore
